@@ -8538,7 +8538,7 @@
     "resilienceMaxAttempts": "Intentos máximos",
     "resilienceMaxWaitPerAttempt": "Espera máxima por intento",
     "resilienceComboCooldownWaitTitle": "Quota-share combo cooldown wait",
-    "resilienceComboCooldownWaitDesc": "Para todas las estrategias de combo: espera a que pase un enfriamiento breve y transitorio y vuelve a enviar la solicitud en lugar de devolver un 429 de inmediato. Nunca espera ante quota_exhausted.",
+    "resilienceComboCooldownWaitDesc": "Para todas las estrategias de combo: espera a que pase un enfriamiento breve y transitorio y vuelve a enviar la solicitud en lugar de devolver un 429 de inmediato. Nunca espera si la cuota está agotada (quota_exhausted).",
     "resilienceComboCooldownWaitToggleDesc": "Quota-share combos only; never waits on quota_exhausted.",
     "resilienceComboCooldownMaxWaitMs": "Espera máxima por intento",
     "resilienceComboCooldownBudgetMs": "Tiempo total de espera",
@@ -9350,7 +9350,7 @@
       "format": {
         "label": "Formato",
         "pass": "native Claude",
-        "why": "El cuerpo debe coincidir con el formato del proveedor: Claude Messages, OpenAI Chat Completions o input[] nativo de OpenAI Responses."
+        "why": "El cuerpo debe coincidir con el formato del proveedor: Claude Messages, OpenAI Chat Completions o el campo input[] nativo de la API Responses de OpenAI."
       },
       "profitable": {
         "label": "Rentable",
@@ -9359,7 +9359,7 @@
       }
     },
     "enableTitle": "Activar el motor",
-    "enableDescription": "Se ejecuta en último lugar, después de que los motores de texto limpien la solicitud, usando el formato nativo del proveedor; las solicitudes de OpenAI Chat/Responses se comprimen tras la traducción para conservar su estructura. También funciona por separado con el modo <code>omniglyph</code>. Es una versión preliminar y permanece desactivada por defecto hasta completar la validación de extremo a extremo.",
+    "enableDescription": "Se ejecuta en último lugar, después de que los motores de texto limpien la solicitud, usando el formato nativo del proveedor; las solicitudes a las API Chat y Responses de OpenAI se comprimen después de traducirlas, para conservar su estructura. También funciona por separado con el modo <code>omniglyph</code>. Es una versión preliminar y permanece desactivada por defecto hasta completar la validación de extremo a extremo.",
     "profileTitle": "Perfil de compresión",
     "profileDescription": "El perfil es un límite superior, no inferior: un perfil más estricto no puede flexibilizarse mediante una excepción por paso. Según las mediciones realizadas en este código base, con «seguro para código» o «equilibrado», una sesión que aún no ha acumulado historial no comprime nada, porque ambos elevan el umbral mínimo de caracteres y mantienen de forma nativa el prompt del sistema, los esquemas de herramientas y los resultados de las herramientas.",
     "profiles": {
