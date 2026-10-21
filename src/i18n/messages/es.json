@@ -7086,7 +7086,7 @@
     "showNgrokTunnel": "túnel ngrok",
     "showNgrokTunnelDesc": "Muestre los controles del túnel ngrok en la página Punto final.",
     "sidebarVisibility": "Ocultar elementos de la barra lateral",
-    "sidebarVisibilityDesc": "Oculta cualquier entrada de navegación de la barra lateral para reducir el desorden visual.",
+    "sidebarVisibilityDesc": "Oculta cualquier entrada de navegación de la barra lateral para reducir el desorden visual sin desactivar ninguna función",
     "sidebarVisibilityHint": "Una sección de la barra lateral se oculta automáticamente cuando todas sus entradas están ocultas",
     "sidebarSectionShow": "Mostrar todos los elementos de esta sección",
     "sidebarSectionHide": "Ocultar todos los elementos de esta sección",
